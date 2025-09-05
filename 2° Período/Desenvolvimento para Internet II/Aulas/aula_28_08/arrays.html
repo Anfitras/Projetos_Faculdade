@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script>
+      console.log("Aula sobre arrays");
+      const fruits = ["Bananas", "Apples", "Oranges", "Mango"];
+      let size = fruits.length;
+
+      console.log("Tamanho do array: " + size);
+      fruits.push("Kiwi");
+      console.log(fruits);
+      fruits.unshift("Lemon");
+      console.log(fruits);
+      fruits.splice(2, 0, "Maçã", "Goiaba");
+      console.log(fruits);
+      fruits.splice(4, 2, "Tomate");
+      console.log(fruits);
+      fruits.pop();
+      console.log(fruits);
+      fruits.shift();
+      console.log(fruits);
+
+      const notas = [7, 3, 1.5, 10, 5];
+      let menor = Math.min(...notas);
+      console.log(menor);
+      let maior = Math.max(...notas);
+      console.log(maior);
+
+      console.log(fruits);
+      fruits.sort();
+      fruits.reverse();
+      console.log(fruits);
+
+      const meses = ["Jan", "Feb", "Mar", "Apr"];
+      const mesesOrd = meses.toSorted();
+      console.log(mesesOrd);
+
+      notas.sort(function (a, b) {
+        return a - b;
+      });
+      console.log(notas);
+
+      notas.sort(function (a, b) {
+        return b - a;
+      });
+      console.log(notas);
+    </script>
+  </body>
+</html>
