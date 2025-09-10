@@ -1,0 +1,14 @@
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\bin\Debug\net9.0\funções.exe
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\bin\Debug\net9.0\funções.deps.json
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\bin\Debug\net9.0\funções.runtimeconfig.json
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\bin\Debug\net9.0\funções.dll
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\bin\Debug\net9.0\funções.pdb
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\funções.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\funções.AssemblyInfoInputs.cache
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\funções.AssemblyInfo.cs
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\funções.csproj.CoreCompileInputs.cache
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\funções.dll
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\refint\funções.dll
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\funções.pdb
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\funções.genruntimeconfig.cache
+C:\Users\arthu\OneDrive\IF\Linguagens e Técnica de Programação\aula_02_ead\funções\obj\Debug\net9.0\ref\funções.dll
