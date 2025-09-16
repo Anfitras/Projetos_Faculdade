@@ -2,37 +2,39 @@ using System;
 
 class ex11
 {
-    static void Main()
+    static string decodificar(string fraseCodificada)
     {
-        Console.Write("Digite a mensagem codificada: ");
-        string mensagemCodificada = Console.ReadLine();
+        char[] fraseCodificada_char = fraseCodificada.ToArray();
+        string fraseDecodificada_char = "";
 
-        string mensagemDecodificada = "";
-        int i = 0;
-
-        while (i < mensagemCodificada.Length)
+        for (int i = 0; i < fraseCodificada_char.Length; i++)
         {
-            char atual = mensagemCodificada[i];
-
-            if (atual == 'p')
+            if (fraseCodificada_char[i] == 'p')
             {
-                if (i + 1 < mensagemCodificada.Length)
+                if (i + 1 < fraseCodificada.Length)
                 {
-                    mensagemDecodificada += mensagemCodificada[i + 1];
-                    i += 2;
-                }
-                else
-                {
+                    fraseDecodificada_char += fraseCodificada_char[i + 1];
                     i++;
                 }
             }
             else
             {
-                mensagemDecodificada += atual;
-                i++;
+                fraseDecodificada_char += fraseCodificada_char[i];
             }
         }
 
-        Console.WriteLine(mensagemDecodificada);
+        string fraseDecodificada = new string(fraseDecodificada_char);
+
+        return fraseDecodificada;
+    }
+
+    static void Main()
+    {
+        string frase_codificada;
+
+        Console.Write("Frase codificada: ");
+        frase_codificada = Console.ReadLine();
+
+        Console.WriteLine("Frase decodificada: " + decodificar(frase_codificada));
     }
 }

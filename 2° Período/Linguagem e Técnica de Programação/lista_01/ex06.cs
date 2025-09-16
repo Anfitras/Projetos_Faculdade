@@ -19,7 +19,8 @@ class ex06
 
         Console.WriteLine("--- Vetor ---");
 
-        for (int i = 0; i < tamanhoVetor; i++) {
+        for (int i = 0; i < tamanhoVetor; i++)
+        {
             Console.Write(vetor[i] + "|");
         }
 
