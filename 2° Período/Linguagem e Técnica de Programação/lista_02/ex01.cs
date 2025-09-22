@@ -17,7 +17,7 @@ class ex01
             }
         }
 
-            return menor;
+        return menor;
     }
     static void Main()
     {

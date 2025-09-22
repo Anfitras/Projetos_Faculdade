@@ -17,7 +17,7 @@ class ex02
             }
         }
 
-            return maior;
+        return maior;
     }
     static void Main()
     {

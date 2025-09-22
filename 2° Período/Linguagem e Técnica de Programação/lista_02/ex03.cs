@@ -23,7 +23,7 @@ class ex03
     {
         int linhas, colunas, x;
 
-        Console.WriteLine("Entre com a quantidade de linhas e colunas: ");
+        Console.Write("Entre com a quantidade de linhas e colunas: ");
         linhas = int.Parse(Console.ReadLine());
         colunas = int.Parse(Console.ReadLine());
         Console.Write("Valor x: ");
