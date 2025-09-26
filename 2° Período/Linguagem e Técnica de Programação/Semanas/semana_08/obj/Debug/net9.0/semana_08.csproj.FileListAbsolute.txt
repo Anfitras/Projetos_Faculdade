@@ -1,0 +1,14 @@
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\bin\Debug\net9.0\semana_08.exe
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\bin\Debug\net9.0\semana_08.deps.json
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\bin\Debug\net9.0\semana_08.runtimeconfig.json
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\bin\Debug\net9.0\semana_08.dll
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\bin\Debug\net9.0\semana_08.pdb
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\semana_08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\semana_08.AssemblyInfoInputs.cache
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\semana_08.AssemblyInfo.cs
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\semana_08.csproj.CoreCompileInputs.cache
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\semana_08.dll
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\refint\semana_08.dll
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\semana_08.pdb
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\semana_08.genruntimeconfig.cache
+C:\Users\13789459640\OneDrive\IF\Linguagens e Técnica de Programação\semana_08\obj\Debug\net9.0\ref\semana_08.dll
