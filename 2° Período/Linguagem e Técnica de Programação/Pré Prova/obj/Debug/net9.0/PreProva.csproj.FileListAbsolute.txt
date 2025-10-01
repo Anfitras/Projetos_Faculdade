@@ -1,0 +1,14 @@
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\PreProva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\PreProva.AssemblyInfoInputs.cache
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\PreProva.AssemblyInfo.cs
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\PreProva.csproj.CoreCompileInputs.cache
+C:\Users\13789459640\Desktop\PreProva\bin\Debug\net9.0\PreProva.exe
+C:\Users\13789459640\Desktop\PreProva\bin\Debug\net9.0\PreProva.deps.json
+C:\Users\13789459640\Desktop\PreProva\bin\Debug\net9.0\PreProva.runtimeconfig.json
+C:\Users\13789459640\Desktop\PreProva\bin\Debug\net9.0\PreProva.dll
+C:\Users\13789459640\Desktop\PreProva\bin\Debug\net9.0\PreProva.pdb
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\PreProva.dll
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\refint\PreProva.dll
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\PreProva.pdb
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\PreProva.genruntimeconfig.cache
+C:\Users\13789459640\Desktop\PreProva\obj\Debug\net9.0\ref\PreProva.dll
