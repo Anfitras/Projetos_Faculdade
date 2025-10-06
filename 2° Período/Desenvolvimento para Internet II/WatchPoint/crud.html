@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Acompanhe episódios de séries e animes, avalie filmes e séries, e organize suas notas para não perder o que já assistiu."
+    />
+    <meta
+      name="keywords"
+      content="filmes, séries, animes, marcar, episódios, novos episódios, lista, myanimelist"
+    />
+    <meta name="author" content="Arthur Beraldo" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/crud.css" />
+    <link
+      rel="shortcut icon"
+      href="img-gerais/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>WatchPoint - CRUD</title>
+  </head>
+
+  <body>
+    <header id="navegador">
+      <div id="nav-esquerda">
+        <div id="logo">
+          <img src="img-gerais/logo_watchpoint.png" alt="Logo WatchPoint" />
+        </div>
+        <div id="menu-wrapper">
+          <input type="checkbox" id="menu-drop" class="menu-drop" />
+          <label for="menu-drop" class="menu-texto">&#9776; Menu</label>
+          <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="pag-gerais/animes.html">Animes</a>
+            <a href="pag-gerais/series.html">Séries</a>
+            <a href="pag-gerais/filmes.html">Filmes</a>
+            <a href="historia.html">História</a>
+          </nav>
+        </div>
+        <div class="separador"></div>
+      </div>
+
+      <div id="nav-centro">
+        <form class="pesquisa">
+          <label for="pesquisa-inline" style="display: none">Pesquisar</label>
+          <input
+            type="text"
+            id="pesquisa-inline"
+            placeholder="🔍︎ Buscar título..."
+          />
+        </form>
+      </div>
+
+      <div id="nav-direita">
+        <nav class="separador"></nav>
+        <nav class="nav">
+          <a href="crud.html">Crud</a>
+          <a href="biblioteca.html">Biblioteca</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <nav
+          class="separador"
+          style="margin-left: -50px; background-color: transparent"
+        ></nav>
+      </div>
+    </header>
+
+    <h1 id="titulo_principal">CRUD</h1>
+
+    <main>
+      <div id="janela-add">
+        <form class="form" id="form-cadastro">
+          <label for="nome">Nome do Filme/Série/Anime:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite o nome"
+            required
+          />
+
+          <label for="tipo">Tipo:</label>
+          <select id="tipo" name="tipo" required>
+            <option value="" disabled selected hidden>Escolha uma Tipo</option>
+            <option value="Anime">Anime</option>
+            <option value="Filme">Filme</option>
+            <option value="Série">Série</option>
+          </select>
+
+          <label for="poster">URL do Pôster:</label>
+          <input
+            type="url"
+            id="poster"
+            name="poster"
+            placeholder="https://..."
+            required
+          />
+
+          <label for="sinopse">Sinopse:</label>
+          <textarea
+            id="sinopse"
+            name="sinopse"
+            rows="3"
+            placeholder="Descreva brevemente o conteúdo"
+            required
+          ></textarea>
+
+          <div id="container-episodios" class="escondido">
+            <label for="episodios">Quantidade de Episódios:</label>
+            <input
+              type="number"
+              id="episodios"
+              name="episodios"
+              placeholder="Ex: 24"
+            />
+          </div>
+
+          <label for="nota">Nota Geral (0 a 10):</label>
+          <input
+            type="number"
+            id="nota"
+            name="nota"
+            placeholder="Ex: 8.4"
+            step="0.1"
+          />
+
+          <label for="generos">Gêneros (separe por vírgula):</label>
+          <input
+            type="text"
+            id="generos"
+            name="generos"
+            placeholder="Ex: Ação, Aventura, Fantasia"
+          />
+
+          <button id="btn-cadastrar" type="submit">Salvar</button>
+        </form>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Pôster</th>
+            <th scope="col">Sinopse</th>
+            <th scope="col">Episódios</th>
+            <th scope="col">Nota</th>
+            <th scope="col">Gêneros</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="obrasTabela"></tbody>
+      </table>
+
+      <div id="editModal" class="modal">
+        <div class="modal-content">
+          <a href="#" class="close">&times;</a>
+          <form class="form form-modal" id="form-edicao">
+            <div class="coluna">
+              <label for="edit-nome">Nome do Filme/Série/Anime:</label>
+              <input type="text" id="edit-nome" name="nome" required />
+
+              <label for="edit-tipo">Tipo:</label>
+              <select id="edit-tipo" name="tipo" required>
+                <option value="Anime">Anime</option>
+                <option value="Filme">Filme</option>
+                <option value="Série">Série</option>
+              </select>
+
+              <label for="edit-poster">URL do Pôster:</label>
+              <input type="url" id="edit-poster" name="poster" required />
+
+              <label for="edit-sinopse">Sinopse:</label>
+              <textarea
+                id="edit-sinopse"
+                name="sinopse"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <div class="coluna">
+              <div id="container-episodios-edicao">
+                <label for="edit-episodios">Quantidade de Episódios:</label>
+                <input
+                  type="number"
+                  id="edit-episodios"
+                  name="episodios"
+                  min="1"
+                />
+              </div>
+
+              <label for="edit-nota">Nota Geral (0 a 10):</label>
+              <input
+                type="number"
+                id="edit-nota"
+                name="nota"
+                min="0"
+                max="10"
+                step="0.1"
+              />
+
+              <label for="edit-generos">Gêneros (separe por vírgula):</label>
+              <input type="text" id="edit-generos" name="generos" />
+            </div>
+
+            <button type="submit" class="btn-submit">Salvar Alterações</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 WatchPoint. Todos os direitos reservados.</p>
+      <div class="social">
+        <a href="https://www.instagram.com/_anfitras/" target="_blank"
+          >Instagram</a
+        >
+        | <a href="https://github.com/Anfitras" target="_blank">GitHub</a> |
+        <a href="mailto:arthur.beraldo@alunos.ifsuldeminas.edu.br">Contato</a>
+      </div>
+    </footer>
+    <script src="js/crud.js"></script>
+  </body>
+</html>
