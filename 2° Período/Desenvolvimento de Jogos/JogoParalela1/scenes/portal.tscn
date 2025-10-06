@@ -1,0 +1,74 @@
+[gd_scene load_steps=13 format=3 uid="uid://ct6nal43x52ni"]
+
+[ext_resource type="Script" uid="uid://dvmvwx3lelks8" path="res://area_2d.gd" id="1_jl8kn"]
+[ext_resource type="Texture2D" uid="uid://bvxjc8iiy8ejy" path="res://Assets/Portal/frame-1.png" id="2_3x30s"]
+[ext_resource type="Texture2D" uid="uid://cmf7rlwrlu7wq" path="res://Assets/Portal/frame-2.png" id="3_byaht"]
+[ext_resource type="Texture2D" uid="uid://blj3hn6j37l1d" path="res://Assets/Portal/frame-3.png" id="4_dd4p5"]
+[ext_resource type="Texture2D" uid="uid://py62lr2cvgyi" path="res://Assets/Portal/frame-4.png" id="5_615up"]
+[ext_resource type="Texture2D" uid="uid://d1aaa4ca8qqco" path="res://Assets/Portal/frame-5.png" id="6_ilnwx"]
+[ext_resource type="Texture2D" uid="uid://63mn4b125c45" path="res://Assets/Portal/frame-6.png" id="7_p4sdh"]
+[ext_resource type="Texture2D" uid="uid://dvsee3n15ae48" path="res://Assets/Portal/frame-7.png" id="8_78ryx"]
+[ext_resource type="Texture2D" uid="uid://b3jpuwp1m1vc7" path="res://Assets/Portal/frame-8.png" id="9_1ctne"]
+[ext_resource type="Texture2D" uid="uid://demmndo80yb6c" path="res://Assets/Portal/frame-9.png" id="10_hlpku"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gq7ow"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3x30s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_byaht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dd4p5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_615up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ilnwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p4sdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_78ryx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1ctne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hlpku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hlpku")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t8rg2"]
+radius = 13.0
+height = 60.0
+
+[node name="portal" type="Area2D"]
+script = ExtResource("1_jl8kn")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-4, -19.125)
+rotation = 3.14159
+scale = Vector2(0.303125, 0.286719)
+sprite_frames = SubResource("SpriteFrames_gq7ow")
+autoplay = "default"
+frame = 8
+frame_progress = 0.744973
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -17)
+shape = SubResource("CapsuleShape2D_t8rg2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

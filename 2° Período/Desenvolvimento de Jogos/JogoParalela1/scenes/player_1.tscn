@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://b2dgqpmyn8vk7"]
+
+[ext_resource type="Texture2D" uid="uid://dmpvels3uuwnt" path="res://Assets/Sprite Pack 2/1 - Onion Lad/Idle (16 x 16).png" id="2_buxg0"]
+[ext_resource type="Texture2D" uid="uid://os67i4hs6df6" path="res://Assets/Sprite Pack 2/1 - Onion Lad/Run_&_Jump (16 x 16).png" id="3_6736r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_squ5q"]
+atlas = ExtResource("2_buxg0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxx23"]
+atlas = ExtResource("2_buxg0")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qh3su"]
+atlas = ExtResource("3_6736r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buxg0"]
+atlas = ExtResource("3_6736r")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qh3su"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_squ5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bxx23")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qh3su")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buxg0")
+}],
+"loop": true,
+"name": &"running",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_buxg0"]
+radius = 5.22029
+
+[node name="player1" type="CharacterBody2D"]
+scale = Vector2(2.3, 2.3)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_qh3su")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.840505
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_buxg0")
