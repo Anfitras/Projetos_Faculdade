@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro e Avaliação</title>
+  </head>
+  <body>
+    <h1>Cadastro e Avaliação</h1>
+
+    <h2>Cadastrar Usuário</h2>
+    <form id="formUsuario">
+      <input
+        type="text"
+        id="nomeUsuario"
+        placeholder="Nome do Usuário"
+        required
+      />
+      <input
+        type="email"
+        id="emailUsuario"
+        placeholder="Email do Usuário"
+        required
+      />
+      <button type="submit">Salvar Usuário</button>
+    </form>
+
+    <h2>Cadastrar Obra</h2>
+    <form id="formObra">
+      <input type="text" id="nomeObra" placeholder="Nome da Obra" required />
+      <input
+        type="number"
+        id="anoObra"
+        placeholder="Ano de Lançamento"
+        required
+      />
+      <button type="submit">Salvar Obra</button>
+    </form>
+
+    <h2>Avaliar Obra</h2>
+    <form id="formAvaliacao">
+      <select id="selectUsuario"></select>
+      <select id="selectObra"></select>
+      <input
+        type="number"
+        id="notaAvaliacao"
+        placeholder="Nota (1-10)"
+        min="1"
+        max="10"
+        required
+      />
+      <button type="submit">Salvar Avaliação</button>
+    </form>
+
+    <p><a href="consulta.html">Ir para listagem</a></p>
+
+    <script>
+      function salvarNoStorage(objeto) {
+        localStorage.setItem("dados5", JSON.stringify(objeto));
+      }
+
+      function carregarDoStorage() {
+        return (
+          JSON.parse(localStorage.getItem("dados5")) || {
+            usuarios: [],
+            obras: [],
+            avaliacoes: [],
+          }
+        );
+      }
+
+      function atualizarSelects() {
+        const dados = carregarDoStorage();
+        const selectUsuario = document.getElementById("selectUsuario");
+        const selectObra = document.getElementById("selectObra");
+
+        selectUsuario.innerHTML = "";
+        selectObra.innerHTML = "";
+
+        dados.usuarios.forEach((u) => {
+          let opt = document.createElement("option");
+          opt.value = u.id;
+          opt.textContent = `${u.nome} (${u.email})`;
+          selectUsuario.appendChild(opt);
+        });
+
+        dados.obras.forEach((o) => {
+          let opt = document.createElement("option");
+          opt.value = o.id;
+          opt.textContent = `${o.nome} (${o.ano})`;
+          selectObra.appendChild(opt);
+        });
+      }
+
+      document
+        .getElementById("formUsuario")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const dados = carregarDoStorage();
+          let nome = document.getElementById("nomeUsuario").value;
+          let email = document.getElementById("emailUsuario").value;
+
+          if (nome.length < 4) {
+            alert("O nome do usuário deve ter pelo menos 4 caracteres!");
+            return;
+          }
+
+          const novoUsuario = { id: dados.usuarios.length + 1, nome, email };
+          dados.usuarios.push(novoUsuario);
+          salvarNoStorage(dados);
+          alert("Usuário cadastrado!");
+          this.reset();
+          atualizarSelects();
+        });
+
+      document
+        .getElementById("formObra")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const dados = carregarDoStorage();
+          let nome = document.getElementById("nomeObra").value;
+          let ano = document.getElementById("anoObra").value;
+
+          const novaObra = { id: dados.obras.length + 1, nome, ano };
+          dados.obras.push(novaObra);
+          salvarNoStorage(dados);
+          alert("Obra cadastrada!");
+          this.reset();
+          atualizarSelects();
+        });
+
+      document
+        .getElementById("formAvaliacao")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const dados = carregarDoStorage();
+          const usuarioId = parseInt(
+            document.getElementById("selectUsuario").value
+          );
+          const obraId = parseInt(document.getElementById("selectObra").value);
+          const nota = document.getElementById("notaAvaliacao").value;
+
+          if (
+            dados.avaliacoes.some(
+              (av) => av.usuarioId === usuarioId && av.obraId === obraId
+            )
+          ) {
+            alert("Usuário já avaliou esta obra!");
+            return;
+          }
+
+          dados.avaliacoes.push({ usuarioId, obraId, nota });
+          salvarNoStorage(dados);
+          alert("Avaliação realizada!");
+          this.reset();
+        });
+
+      atualizarSelects();
+    </script>
+  </body>
+</html>

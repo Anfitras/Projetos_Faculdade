@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Listagem</title>
+  </head>
+  <body>
+    <h1>Listagem de Dados</h1>
+
+    <h2>Usuários</h2>
+    <ul id="listaUsuarios"></ul>
+
+    <h2>Obras</h2>
+    <ul id="listaObras"></ul>
+
+    <h2>Avaliações</h2>
+    <ul id="listaAvaliacoes"></ul>
+
+    <p><a href="cadastro.html">Voltar para cadastro</a></p>
+
+    <script>
+      const dados = JSON.parse(localStorage.getItem("dados5")) || {
+        usuarios: [],
+        obras: [],
+        avaliacoes: [],
+      };
+
+      const ulUsuarios = document.getElementById("listaUsuarios");
+      dados.usuarios.forEach((u) => {
+        let li = document.createElement("li");
+        li.textContent = `${u.id} - ${u.nome} (${u.email})`;
+        ulUsuarios.appendChild(li);
+      });
+
+      const ulObras = document.getElementById("listaObras");
+      dados.obras.forEach((o) => {
+        let li = document.createElement("li");
+        li.textContent = `${o.id} - ${o.nome} (Ano: ${o.ano})`;
+        ulObras.appendChild(li);
+      });
+
+      const ulAvaliacoes = document.getElementById("listaAvaliacoes");
+      dados.avaliacoes.forEach((av) => {
+        const usuario = dados.usuarios.find((u) => u.id === av.usuarioId);
+        const obra = dados.obras.find((o) => o.id === av.obraId);
+
+        let li = document.createElement("li");
+
+        if (usuario && obra) {
+          li.textContent = `${usuario.nome} avaliou ${obra.nome} com a nota ${av.nota}`;
+        } else {
+          li.textContent = "Registro de avaliação incompleto.";
+        }
+        ulAvaliacoes.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
