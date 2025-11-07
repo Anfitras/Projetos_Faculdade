@@ -1,0 +1,14 @@
+C:\Users\13789459640\Desktop\CadastroEletros\bin\Debug\net9.0\Eletro.exe
+C:\Users\13789459640\Desktop\CadastroEletros\bin\Debug\net9.0\Eletro.deps.json
+C:\Users\13789459640\Desktop\CadastroEletros\bin\Debug\net9.0\Eletro.runtimeconfig.json
+C:\Users\13789459640\Desktop\CadastroEletros\bin\Debug\net9.0\Eletro.dll
+C:\Users\13789459640\Desktop\CadastroEletros\bin\Debug\net9.0\Eletro.pdb
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\Eletro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\Eletro.AssemblyInfoInputs.cache
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\Eletro.AssemblyInfo.cs
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\Eletro.csproj.CoreCompileInputs.cache
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\Eletro.dll
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\refint\Eletro.dll
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\Eletro.pdb
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\Eletro.genruntimeconfig.cache
+C:\Users\13789459640\Desktop\CadastroEletros\obj\Debug\net9.0\ref\Eletro.dll

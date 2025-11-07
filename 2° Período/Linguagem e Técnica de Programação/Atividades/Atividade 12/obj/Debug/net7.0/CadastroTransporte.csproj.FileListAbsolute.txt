@@ -1,0 +1,14 @@
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\bin\Debug\net7.0\CadastroTransporte.exe
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\bin\Debug\net7.0\CadastroTransporte.deps.json
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\bin\Debug\net7.0\CadastroTransporte.runtimeconfig.json
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\bin\Debug\net7.0\CadastroTransporte.dll
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\bin\Debug\net7.0\CadastroTransporte.pdb
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\CadastroTransporte.GeneratedMSBuildEditorConfig.editorconfig
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\CadastroTransporte.AssemblyInfoInputs.cache
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\CadastroTransporte.AssemblyInfo.cs
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\CadastroTransporte.csproj.CoreCompileInputs.cache
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\CadastroTransporte.dll
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\refint\CadastroTransporte.dll
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\CadastroTransporte.pdb
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\CadastroTransporte.genruntimeconfig.cache
+D:\mef\IF\Linguagem I\Semana 7 - Struct\AtividadeSala-SistemaTransporte\CadastroTransporte\obj\Debug\net7.0\ref\CadastroTransporte.dll

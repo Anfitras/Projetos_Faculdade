@@ -1,0 +1,14 @@
+C:\Users\13789459640\Desktop\CadastroTransporte\bin\Debug\net9.0\CadastroTransporte.exe
+C:\Users\13789459640\Desktop\CadastroTransporte\bin\Debug\net9.0\CadastroTransporte.deps.json
+C:\Users\13789459640\Desktop\CadastroTransporte\bin\Debug\net9.0\CadastroTransporte.runtimeconfig.json
+C:\Users\13789459640\Desktop\CadastroTransporte\bin\Debug\net9.0\CadastroTransporte.dll
+C:\Users\13789459640\Desktop\CadastroTransporte\bin\Debug\net9.0\CadastroTransporte.pdb
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\CadastroTransporte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\CadastroTransporte.AssemblyInfoInputs.cache
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\CadastroTransporte.AssemblyInfo.cs
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\CadastroTransporte.csproj.CoreCompileInputs.cache
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\CadastroTransporte.dll
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\refint\CadastroTransporte.dll
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\CadastroTransporte.pdb
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\CadastroTransporte.genruntimeconfig.cache
+C:\Users\13789459640\Desktop\CadastroTransporte\obj\Debug\net9.0\ref\CadastroTransporte.dll

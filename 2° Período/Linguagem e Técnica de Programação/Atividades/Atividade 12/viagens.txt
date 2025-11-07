@@ -1,0 +1,5 @@
+Palio,PXX-7E31,670,14,São Paulo
+Gol,GQZ-8E97,900,15,Belo Horizonte
+Onix,HTY-9H21,1200,12,Rio de Janeiro
+Civic,JKL-1J45,1800,10,Curitiba
+Fox,TRQ-5B66,160,13,Pouso Alegre    
