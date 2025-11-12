@@ -1,0 +1,11 @@
+Pedro Silva;25;1,75;78,5;Premium;150;11987654321
+Maria Santos;32;1,68;65;Básico;80;11976543210
+João Oliveira;19;1,82;85,3;Premium;150;11965432109
+Ana Costa;28;1,6;58,7;Intermediário;120;11954321098
+Carlos Souza;45;1,78;92;Básico;80;11943210987
+Juliana Lima;23;1,65;60,5;Premium;150;11932109876
+Roberto Alves;38;1,8;88;Intermediário;120;11921098765
+Fernanda Rocha;27;1,7;68,2;Premium;150;11910987654
+Lucas Martins;21;1,88;95,5;Básico;80;11909876543
+Camila Ferreira;30;1,63;62;Intermediário;120;11998765432
+Arthur Beraldo;18;1,74;70;Básico;100;35998000575

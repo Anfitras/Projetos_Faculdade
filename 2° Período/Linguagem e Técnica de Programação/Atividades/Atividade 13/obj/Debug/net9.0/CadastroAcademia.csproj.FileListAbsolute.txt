@@ -1,0 +1,14 @@
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\CadastroAcademia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\CadastroAcademia.AssemblyInfoInputs.cache
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\CadastroAcademia.AssemblyInfo.cs
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\CadastroAcademia.csproj.CoreCompileInputs.cache
+C:\Users\13789459640\Desktop\Academia\bin\Debug\net9.0\CadastroAcademia.exe
+C:\Users\13789459640\Desktop\Academia\bin\Debug\net9.0\CadastroAcademia.deps.json
+C:\Users\13789459640\Desktop\Academia\bin\Debug\net9.0\CadastroAcademia.runtimeconfig.json
+C:\Users\13789459640\Desktop\Academia\bin\Debug\net9.0\CadastroAcademia.dll
+C:\Users\13789459640\Desktop\Academia\bin\Debug\net9.0\CadastroAcademia.pdb
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\CadastroAcademia.dll
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\refint\CadastroAcademia.dll
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\CadastroAcademia.pdb
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\CadastroAcademia.genruntimeconfig.cache
+C:\Users\13789459640\Desktop\Academia\obj\Debug\net9.0\ref\CadastroAcademia.dll

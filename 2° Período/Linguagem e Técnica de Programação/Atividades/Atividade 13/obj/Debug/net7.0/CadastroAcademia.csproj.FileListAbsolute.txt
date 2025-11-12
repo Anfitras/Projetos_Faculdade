@@ -1,0 +1,14 @@
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\bin\Debug\net7.0\CadastroAcademia.exe
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\bin\Debug\net7.0\CadastroAcademia.deps.json
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\bin\Debug\net7.0\CadastroAcademia.runtimeconfig.json
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\bin\Debug\net7.0\CadastroAcademia.dll
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\bin\Debug\net7.0\CadastroAcademia.pdb
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\CadastroAcademia.GeneratedMSBuildEditorConfig.editorconfig
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\CadastroAcademia.AssemblyInfoInputs.cache
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\CadastroAcademia.AssemblyInfo.cs
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\CadastroAcademia.csproj.CoreCompileInputs.cache
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\CadastroAcademia.dll
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\refint\CadastroAcademia.dll
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\CadastroAcademia.pdb
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\CadastroAcademia.genruntimeconfig.cache
+D:\mef\IF\Linguagem I\Semana 11 - Atividade Pré-Prova\Modelos\Academia\CadastroAcademia\obj\Debug\net7.0\ref\CadastroAcademia.dll
