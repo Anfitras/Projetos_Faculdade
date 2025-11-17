@@ -1,0 +1,16 @@
+C:\Users\arthu\Downloads\ProjetoIMC\bin\Debug\net9.0-windows\ProjetoIMC.exe
+C:\Users\arthu\Downloads\ProjetoIMC\bin\Debug\net9.0-windows\ProjetoIMC.deps.json
+C:\Users\arthu\Downloads\ProjetoIMC\bin\Debug\net9.0-windows\ProjetoIMC.runtimeconfig.json
+C:\Users\arthu\Downloads\ProjetoIMC\bin\Debug\net9.0-windows\ProjetoIMC.dll
+C:\Users\arthu\Downloads\ProjetoIMC\bin\Debug\net9.0-windows\ProjetoIMC.pdb
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.Form1.resources
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.csproj.GenerateResource.cache
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.AssemblyInfoInputs.cache
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.AssemblyInfo.cs
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.csproj.CoreCompileInputs.cache
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.dll
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\refint\ProjetoIMC.dll
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.pdb
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ProjetoIMC.genruntimeconfig.cache
+C:\Users\arthu\Downloads\ProjetoIMC\obj\Debug\net9.0-windows\ref\ProjetoIMC.dll
