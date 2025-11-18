@@ -1,0 +1,4 @@
+Psikolera,Rock,5,1
+Metalica,Rock,4,2
+Linkin Park,Pop Rock,6,3
+Psicolera,Rock Metal,5,2

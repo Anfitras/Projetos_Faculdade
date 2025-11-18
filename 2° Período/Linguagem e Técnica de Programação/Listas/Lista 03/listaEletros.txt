@@ -1,0 +1,13 @@
+Geladeira,0.2,8.0
+Chuveiro Elétrico,5.5,0.5
+Ar Condicionado,1.4,8.0
+Air Fryer,1.8,0.75
+Micro-ondas,1.2,0.25
+Forno Elétrico,2.0,1.0
+Televisão LED,0.12,5.0
+Máquina de Lavar,0.8,1.5
+Computador Desktop,0.3,8.0
+Lâmpada LED,0.009,6.0
+Ventilador,0.08,6.0
+Ferro de Passar,1.5,0.3
+Liquidificador,0.6,0.1

@@ -1,0 +1,15 @@
+The Legend of Zelda: BOTW,15/10/2025,Alice,True
+Elden Ring,01/09/2025,Bruno,False
+Elden Ring,10/11/2025,Carlos,False
+Celeste,01/11/2025,Daniela,True
+Red Dead Redemption 2,20/08/2025,Fernando,False
+Red Dead Redemption 2,30/10/2025,Gabriela,True
+God of War (2018),12/11/2025,Leticia,True
+Stardew Valley,05/11/2025,Helena,False
+Hollow Knight,10/07/2025,Igor,False
+Horizon Zero Dawn,08/11/2025,Pedro,True
+Portal 2,15/06/2025,Marcos,False
+Dead Cells,13/11/2025,Arthur,False
+Doom Eternal,01/10/2025,Rafael,False
+Doom Eternal,03/11/2025,Sofia,True
+Nier: Automata,11/11/2025,Julia,True
