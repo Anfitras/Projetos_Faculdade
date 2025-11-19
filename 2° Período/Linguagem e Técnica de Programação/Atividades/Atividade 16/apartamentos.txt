@@ -1,0 +1,12 @@
+João Silva;101;50;2;656,88
+Maria Souza;102;50;3;656,88
+Carlos Mendes;103;50;1;656,88
+Ana Pereira;201;75;4;985,32
+Bruno Castro;202;75;2;985,32
+Fernanda Lima;203;75;3;985,32
+Ricardo Alves;301;100;5;1313,76
+Patrícia Nogueira;302;100;4;1313,76
+Gustavo Santos;303;100;3;1313,76
+Luciana Martins;401;50;2;656,88
+Eduardo Ramos;402;75;3;985,32
+Sabrina Oliveira;403;100;4;1075,00

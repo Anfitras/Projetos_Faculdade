@@ -1,0 +1,14 @@
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\bin\Debug\net7.0\Condominio.exe
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\bin\Debug\net7.0\Condominio.deps.json
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\bin\Debug\net7.0\Condominio.runtimeconfig.json
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\bin\Debug\net7.0\Condominio.dll
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\bin\Debug\net7.0\Condominio.pdb
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\Condominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\Condominio.AssemblyInfoInputs.cache
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\Condominio.AssemblyInfo.cs
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\Condominio.csproj.CoreCompileInputs.cache
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\Condominio.dll
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\refint\Condominio.dll
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\Condominio.pdb
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\Condominio.genruntimeconfig.cache
+D:\mef\IF\Linguagem I\Semana 11 - Segunda Avaliação Structs\Tipo1-Apartamento\Condominio\obj\Debug\net7.0\ref\Condominio.dll
