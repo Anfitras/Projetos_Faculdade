@@ -62,7 +62,7 @@ namespace cadastroGado
         public int codigo;
         public double leite;
         public double alim;
-        public List<Data> listadeDadas = new List<Data>();
+        public Data data;
         public bool abate;
     }
 }

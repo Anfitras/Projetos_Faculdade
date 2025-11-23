@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arthu\\Downloads\\Lista 03\\Lista 3.csproj": {}
+    "C:\\Users\\arthu\\Desktop\\Lista 03\\Lista 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arthu\\Downloads\\Lista 03\\Lista 3.csproj": {
+    "C:\\Users\\arthu\\Desktop\\Lista 03\\Lista 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthu\\Downloads\\Lista 03\\Lista 3.csproj",
+        "projectUniqueName": "C:\\Users\\arthu\\Desktop\\Lista 03\\Lista 3.csproj",
         "projectName": "Lista 3",
-        "projectPath": "C:\\Users\\arthu\\Downloads\\Lista 03\\Lista 3.csproj",
+        "projectPath": "C:\\Users\\arthu\\Desktop\\Lista 03\\Lista 3.csproj",
         "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthu\\Downloads\\Lista 03\\obj\\",
+        "outputPath": "C:\\Users\\arthu\\Desktop\\Lista 03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,24 +56,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

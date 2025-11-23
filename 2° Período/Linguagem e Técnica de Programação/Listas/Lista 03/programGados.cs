@@ -5,11 +5,16 @@ namespace cadastroGado
 {
     class programGados
     {
-        static void carregarDados(List<Gado> listadeGados, string nomeArquivo)
+        static void carregarDados(
+            List<Gado> listadeGados,
+            string nomeArquivoDados,
+            string nomeArquivoDatas
+        )
         {
-            if (File.Exists(nomeArquivo))
+            // Carrega dados principais (codigo, leite, alim)
+            if (File.Exists(nomeArquivoDados))
             {
-                string[] linhas = File.ReadAllLines(nomeArquivo);
+                string[] linhas = File.ReadAllLines(nomeArquivoDados);
                 foreach (string linha in linhas)
                 {
                     string[] campos = linha.Split(',');
@@ -23,14 +28,12 @@ namespace cadastroGado
                 Console.WriteLine("Dados carregados com sucesso!");
             }
             else
-                Console.WriteLine("Arquivo não encontrado :(");
-        }
+                Console.WriteLine($"Arquivo '{nomeArquivoDados}' não encontrado :(");
 
-        static void carregarDatas(List<Gado> listadeGados, string nomeArquivo)
-        {
-            if (File.Exists(nomeArquivo))
+            // Carrega datas associadas (se existir o arquivo de datas)
+            if (File.Exists(nomeArquivoDatas))
             {
-                string[] linhas = File.ReadAllLines(nomeArquivo);
+                string[] linhas = File.ReadAllLines(nomeArquivoDatas);
                 foreach (string linha in linhas)
                 {
                     string[] campos = linha.Split(',');
@@ -53,7 +56,7 @@ namespace cadastroGado
                         data.mes = campos[1];
                         data.ano = int.Parse(campos[2]);
 
-                        gadoEncontrado.listadeDadas.Add(data);
+                        gadoEncontrado.data = data;
                     }
                 }
                 Console.WriteLine("Dados de nascimento carregados com sucesso!");
@@ -61,46 +64,48 @@ namespace cadastroGado
             else
             {
                 Console.WriteLine(
-                    "Arquivo 'listaNasciGados.txt' não encontrado (será criado ao salvar)."
+                    $"Arquivo '{nomeArquivoDatas}' não encontrado (será criado ao salvar)."
                 );
             }
         }
 
-        static void salvarDados(List<Gado> listadeGados, string nomeArquivo)
+        static void salvarDados(
+            List<Gado> listadeGados,
+            string nomeArquivoDados,
+            string nomeArquivoDatas
+        )
         {
-            StreamWriter writer = new StreamWriter(nomeArquivo);
-
-            foreach (Gado gado in listadeGados)
+            // Salva dados principais
+            using (StreamWriter writer = new StreamWriter(nomeArquivoDados))
             {
-                writer.WriteLine($"{gado.codigo},{gado.leite},{gado.alim},{gado.abate}");
-            }
-
-            Console.WriteLine("Dados de Jogos salvos com sucesso!");
-            writer.Dispose();
-        }
-
-        static void salvarDatas(List<Gado> listadeGados, string nomeArquivo)
-        {
-            StreamWriter writer = new StreamWriter(nomeArquivo);
-
-            foreach (Gado gado in listadeGados)
-            {
-                foreach (Data data in gado.listadeDadas)
+                foreach (Gado gado in listadeGados)
                 {
-                    writer.WriteLine($"{gado.codigo},{data.mes},{data.ano}");
+                    writer.WriteLine($"{gado.codigo},{gado.leite},{gado.alim},{gado.abate}");
                 }
             }
+            Console.WriteLine($"Dados principais salvos em '{nomeArquivoDados}'");
 
-            Console.WriteLine("Dados de Datas salvos com sucesso!");
-            writer.Dispose();
+            // Salva datas separadas
+            using (StreamWriter writer = new StreamWriter(nomeArquivoDatas))
+            {
+                foreach (Gado gado in listadeGados)
+                {
+                    if (gado.data != null)
+                    {
+                        writer.WriteLine($"{gado.codigo},{gado.data.mes},{gado.data.ano}");
+                    }
+                }
+            }
+            Console.WriteLine($"Dados de datas salvos em '{nomeArquivoDatas}'");
         }
 
         static int idadeGado(Gado g, int mesAtual)
         {
             int idade = 0;
 
-            foreach (Data d in g.listadeDadas)
+            if (g.data != null)
             {
+                Data d = g.data;
                 int mes = d.mes.ToUpper().Trim() switch
                 {
                     "JANEIRO" => 1,
@@ -191,8 +196,7 @@ namespace cadastroGado
         static void Main()
         {
             List<Gado> listadeGados = new List<Gado>();
-            carregarDados(listadeGados, "listaGados.txt");
-            carregarDatas(listadeGados, "listaNasciGados.txt");
+            carregarDados(listadeGados, "listaGados.txt", "listaNasciGados.txt");
             Console.Write("Mês Atual(numérico): ");
             int mesAtual = int.Parse(Console.ReadLine());
             gadosAbate(listadeGados, mesAtual);
@@ -220,8 +224,7 @@ namespace cadastroGado
                         listaAbate(listadeGados, mesAtual);
                         break;
                     case 0:
-                        salvarDados(listadeGados, "listaGados.txt");
-                        salvarDatas(listadeGados, "listaNasciGados.txt");
+                        salvarDados(listadeGados, "listaGados.txt", "listaNasciGados.txt");
                         Console.WriteLine("Saindo...");
                         break;
                 }

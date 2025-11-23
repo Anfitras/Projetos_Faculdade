@@ -26,3 +26,17 @@ C:\Users\arthu\Downloads\Lista 03\obj\Debug\net9.0\refint\Lista 3.dll
 C:\Users\arthu\Downloads\Lista 03\obj\Debug\net9.0\Lista 3.pdb
 C:\Users\arthu\Downloads\Lista 03\obj\Debug\net9.0\Lista 3.genruntimeconfig.cache
 C:\Users\arthu\Downloads\Lista 03\obj\Debug\net9.0\ref\Lista 3.dll
+C:\Users\arthu\Desktop\Lista 03\bin\Debug\net9.0\Lista 3.exe
+c:\Users\arthu\Desktop\Lista 03\bin\Debug\net9.0\Lista 3.deps.json
+c:\Users\arthu\Desktop\Lista 03\bin\Debug\net9.0\Lista 3.runtimeconfig.json
+C:\Users\arthu\Desktop\Lista 03\bin\Debug\net9.0\Lista 3.dll
+C:\Users\arthu\Desktop\Lista 03\bin\Debug\net9.0\Lista 3.pdb
+C:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\Lista 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\Lista 3.AssemblyInfoInputs.cache
+C:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\Lista 3.AssemblyInfo.cs
+C:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\Lista 3.csproj.CoreCompileInputs.cache
+C:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\Lista 3.dll
+C:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\refint\Lista 3.dll
+C:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\Lista 3.pdb
+c:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\Lista 3.genruntimeconfig.cache
+c:\Users\arthu\Desktop\Lista 03\obj\Debug\net9.0\ref\Lista 3.dll
