@@ -1,0 +1,235 @@
+[gd_scene load_steps=13 format=3 uid="uid://bjkarqpdx4oy6"]
+
+[ext_resource type="Texture2D" uid="uid://c5rn7ptwp0ax0" path="res://sprites/world/Background parts/6 - Distant_trees.png" id="1_btxxm"]
+[ext_resource type="Script" uid="uid://bc2ci2qwnnj7h" path="res://scripts/ui/main_menu.gd" id="1_wb0q5"]
+[ext_resource type="Texture2D" uid="uid://d3mlrsdqc5e8h" path="res://sprites/world/Background parts/3 - Cloud_cover_1.png" id="2_wb0q5"]
+[ext_resource type="Texture2D" uid="uid://brvgo4yng732p" path="res://sprites/world/Background parts/4 - Tree_row_BG_1.png" id="3_q85j6"]
+[ext_resource type="Texture2D" uid="uid://bu8i587g6jbgo" path="res://sprites/world/Background parts/5 - Tree_row_BG_2.png" id="4_8g5eo"]
+[ext_resource type="Texture2D" uid="uid://b5wh3nap6r0jn" path="res://sprites/world/Background parts/2 - Trees.png" id="5_7suek"]
+[ext_resource type="Texture2D" uid="uid://cq1u7dl8v6uha" path="res://sprites/world/Background parts/3 - Bottom_leaf_piles.png" id="6_otr3d"]
+[ext_resource type="Texture2D" uid="uid://2thw2ifednro" path="res://sprites/world/Background parts/1 - Leaf_top.png" id="7_8ekit"]
+[ext_resource type="FontFile" uid="uid://5nweht480y81" path="res://fonts/Roboto-Regular.ttf" id="9_q85j6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n4uci"]
+font = ExtResource("9_q85j6")
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_wb0q5"]
+font = ExtResource("9_q85j6")
+font_size = 32
+font_color = Color(0, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_q85j6"]
+font = ExtResource("9_q85j6")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wb0q5")
+
+[node name="BG" type="Node2D" parent="."]
+
+[node name="DistantBG" type="Parallax2D" parent="BG"]
+scroll_scale = Vector2(0.5, 0.5)
+autoscroll = Vector2(25, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/DistantBG"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_btxxm")
+centered = false
+
+[node name="Clouds" type="Parallax2D" parent="BG"]
+scroll_scale = Vector2(0.5, 0.5)
+autoscroll = Vector2(-50, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/Clouds"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_wb0q5")
+centered = false
+
+[node name="TreeRow1" type="Parallax2D" parent="BG"]
+scroll_scale = Vector2(0.6, 0.6)
+autoscroll = Vector2(30, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/TreeRow1"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("3_q85j6")
+centered = false
+
+[node name="TreeRow2" type="Parallax2D" parent="BG"]
+scroll_scale = Vector2(0.7, 0.7)
+autoscroll = Vector2(35, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/TreeRow2"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("4_8g5eo")
+centered = false
+
+[node name="Trees" type="Parallax2D" parent="BG"]
+scroll_scale = Vector2(0.8, 0.8)
+autoscroll = Vector2(40, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/Trees"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("5_7suek")
+centered = false
+
+[node name="BottomLeaf" type="Parallax2D" parent="BG"]
+scroll_scale = Vector2(0.9, 0.9)
+autoscroll = Vector2(45, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/BottomLeaf"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("6_otr3d")
+centered = false
+
+[node name="TopLeaf" type="Parallax2D" parent="BG"]
+scroll_scale = Vector2(0.9, 0.9)
+autoscroll = Vector2(50, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/TopLeaf"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("7_8ekit")
+centered = false
+
+[node name="Overlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="MenuContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="MenuContainer"]
+layout_mode = 2
+text = "RunTime"
+label_settings = SubResource("LabelSettings_n4uci")
+
+[node name="BtnPlay" type="Button" parent="MenuContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_q85j6")
+text = "JOGAR"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuContainer"]
+layout_mode = 2
+
+[node name="BtnQuit" type="Button" parent="MenuContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("9_q85j6")
+text = "SAIR"
+
+[node name="BtnHelp" type="Button" parent="MenuContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("9_q85j6")
+text = "?"
+
+[node name="HelpPanel" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.9411765)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HelpPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.5
+offset_top = -20.0
+offset_right = 52.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+text = "COMO JOGAR"
+label_settings = SubResource("LabelSettings_wb0q5")
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+text = "CONTROLES
+Pular - W
+Esqueda - A
+Direita - D"
+label_settings = SubResource("LabelSettings_q85j6")
+horizontal_alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+text = "OBJETIVO
+Chegue ao final antes que o tempo acabe."
+label_settings = SubResource("LabelSettings_q85j6")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+text = "DICA
+Inimigos derrubam cápsulas temporais.
+ Pegue-as para ganhar tempo extra!"
+label_settings = SubResource("LabelSettings_q85j6")
+horizontal_alignment = 1
+
+[node name="HSeparator3" type="HSeparator" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="BtnCloseHelp" type="Button" parent="HelpPanel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.8745098, 0.8745098, 1)
+theme_override_fonts/font = ExtResource("9_q85j6")
+text = "FECHAR"
+
+[connection signal="pressed" from="MenuContainer/BtnPlay" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="MenuContainer/HBoxContainer/BtnQuit" to="." method="_on_btn_quit_pressed"]
+[connection signal="pressed" from="MenuContainer/HBoxContainer/BtnHelp" to="." method="_on_btn_help_pressed"]
+[connection signal="pressed" from="HelpPanel/VBoxContainer/BtnCloseHelp" to="." method="_on_btn_close_help_pressed"]

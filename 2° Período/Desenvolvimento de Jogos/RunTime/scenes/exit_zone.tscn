@@ -1,0 +1,64 @@
+[gd_scene load_steps=9 format=3 uid="uid://uvlo4it7rb4g"]
+
+[ext_resource type="Script" uid="uid://cg7h8x4iibihr" path="res://scripts/objects/exit_zone.gd" id="1_wk7w5"]
+[ext_resource type="Texture2D" uid="uid://crle88i6x282x" path="res://sprites/items/Treasure_Chest.png" id="2_e5n2b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67lqd"]
+atlas = ExtResource("2_e5n2b")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ouibr"]
+atlas = ExtResource("2_e5n2b")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7e43t"]
+atlas = ExtResource("2_e5n2b")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umuyh"]
+atlas = ExtResource("2_e5n2b")
+region = Rect2(64, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qck8p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67lqd")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ouibr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7e43t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umuyh")
+}],
+"loop": false,
+"name": &"open",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qodbk"]
+size = Vector2(28, 23)
+
+[node name="ExitZone" type="Area2D"]
+collision_layer = 9
+collision_mask = 2
+script = ExtResource("1_wk7w5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_qck8p")
+animation = &"open"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_qodbk")

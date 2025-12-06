@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://b16psmwie5crl"]
+
+[ext_resource type="Script" uid="uid://44202rfng8ly" path="res://scripts/ui/victory_screen.gd" id="1_dtet5"]
+[ext_resource type="FontFile" uid="uid://5nweht480y81" path="res://fonts/Roboto-Regular.ttf" id="2_sopbp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xb1m3"]
+font = ExtResource("2_sopbp")
+font_size = 48
+font_color = Color(1, 0, 0, 1)
+
+[node name="GameOverScreen" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_dtet5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7607843, 0, 0, 0.2509804)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "VOCÊ MORREU!"
+label_settings = SubResource("LabelSettings_xb1m3")
+
+[node name="BtnRetry" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sopbp")
+text = "JOGAR NOVAMENTE"
+
+[node name="BtnMenu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sopbp")
+text = "VOLTAR AO MENU"
+
+[connection signal="pressed" from="VBoxContainer/BtnRetry" to="." method="_on_btn_retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnMenu" to="." method="_on_btn_menu_pressed"]
