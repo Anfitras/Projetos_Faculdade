@@ -11,7 +11,7 @@ namespace SistemaCadastro
 {
     internal class ConectaBanco
     {
-        MySqlConnection conexao = new MySqlConnection("server=switchyard.proxy.rlwy.net;port=43871;user id=root;password=kDUwovlBMymRKMWKcCLuAzmOoXvEJMRk;database=railway");
+        MySqlConnection conexao = new MySqlConnection("server=*;port=*;user id=root;password=*;database=*");
         public string mensagem;
 
         public bool insereObra(Obra novaObra)
