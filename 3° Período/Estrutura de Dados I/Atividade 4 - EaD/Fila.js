@@ -12,7 +12,7 @@ class Fila {
   }
 
   isFull() {
-    return this.#qnt === this.#elementos.length - 1;
+    return this.#qnt === this.#elementos.length;
   }
 
   isEmpty() {
