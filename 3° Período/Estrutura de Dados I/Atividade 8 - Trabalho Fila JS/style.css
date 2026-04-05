@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 8px;
+  background-color: #dadada;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+li:hover {
+  background-color: #e2e2e2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+.card-painel {
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+#ultimoAtendimento {
+  color: #28a745;
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
