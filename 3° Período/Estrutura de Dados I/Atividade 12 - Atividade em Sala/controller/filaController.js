@@ -1,6 +1,7 @@
 const minhaFila = new FilaEncadeada();
 const minhaFilaPrioritaria = new FilaEncadeada();
 let qtdNormalDesdeUltimaPrioritaria = 0;
+let proximaOrdemChegada = 1;
 
 function adicionarElemento() {
   const nome = document.getElementById("txtnovoNome");
@@ -15,6 +16,7 @@ function adicionarElemento() {
     data,
     hora,
     idade,
+    proximaOrdemChegada++,
   );
 
   if (idade >= 60) {
@@ -58,18 +60,29 @@ function removerElemento() {
   const filaPrioritariaVazia = minhaFilaPrioritaria.isEmpty();
 
   if (filaNormalVazia && filaPrioritariaVazia) {
+    qtdNormalDesdeUltimaPrioritaria = 0;
     alert("Filas vazias");
     return;
   }
 
-  const deveAtenderPrioritaria = qtdNormalDesdeUltimaPrioritaria >= 3;
+  if (!filaNormalVazia && !filaPrioritariaVazia) {
+    const deveAtenderPrioritaria = qtdNormalDesdeUltimaPrioritaria >= 3;
+    const proximoNormal = minhaFila.peek();
+    const proximoPrioritario = minhaFilaPrioritaria.peek();
 
-  if (deveAtenderPrioritaria && !filaPrioritariaVazia) {
-    removido = minhaFilaPrioritaria.dequeue();
-    qtdNormalDesdeUltimaPrioritaria = 0;
+    if (deveAtenderPrioritaria) {
+      removido = minhaFilaPrioritaria.dequeue();
+      qtdNormalDesdeUltimaPrioritaria = 0;
+    } else if (proximoPrioritario.ordemChegada < proximoNormal.ordemChegada) {
+      removido = minhaFilaPrioritaria.dequeue();
+      qtdNormalDesdeUltimaPrioritaria = 0;
+    } else {
+      removido = minhaFila.dequeue();
+      qtdNormalDesdeUltimaPrioritaria++;
+    }
   } else if (!filaNormalVazia) {
     removido = minhaFila.dequeue();
-    qtdNormalDesdeUltimaPrioritaria++;
+    qtdNormalDesdeUltimaPrioritaria = 0;
   } else {
     removido = minhaFilaPrioritaria.dequeue();
     qtdNormalDesdeUltimaPrioritaria = 0;

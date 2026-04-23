@@ -4,13 +4,15 @@ class Atendimento {
   #data;
   #hora;
   #idade;
+  #ordemChegada;
 
-  constructor(nome, cpf, data, hora, idade) {
+  constructor(nome, cpf, data, hora, idade, ordemChegada = 0) {
     this.#nome = nome;
     this.#cpf = cpf;
     this.#data = data;
     this.#hora = hora;
     this.#idade = idade;
+    this.#ordemChegada = ordemChegada;
   }
 
   get nome() {
@@ -33,6 +35,10 @@ class Atendimento {
     return this.#idade;
   }
 
+  get ordemChegada() {
+    return this.#ordemChegada;
+  }
+
   set nome(nome) {
     this.#nome = nome;
   }
@@ -47,6 +53,9 @@ class Atendimento {
   }
   set idade(idade) {
     this.#idade = idade;
+  }
+  set ordemChegada(ordemChegada) {
+    this.#ordemChegada = ordemChegada;
   }
 
   toString() {

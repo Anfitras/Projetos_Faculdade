@@ -46,6 +46,11 @@ class FilaEncadeada {
     return null;
   }
 
+  peek() {
+    if (this.isEmpty()) return null;
+    return this.#inicio.dado;
+  }
+
   toString() {
     let resultado = "";
     let aux = this.#inicio;
