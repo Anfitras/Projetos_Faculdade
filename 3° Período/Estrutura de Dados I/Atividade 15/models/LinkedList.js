@@ -112,7 +112,7 @@ class LinkedList {
   }
 
   getFirst() {
-    if (this.isEmpty) {
+    if (this.isEmpty()) {
       return null;
     }
 
@@ -120,7 +120,7 @@ class LinkedList {
   }
 
   getLast() {
-    if (this.isEmpty) {
+    if (this.isEmpty()) {
       return null;
     }
 
@@ -144,7 +144,7 @@ class LinkedList {
 
   toString() {
     let noAtual = this.#head;
-    let returno = "";
+    let retorno = "";
 
     while (noAtual != null) {
       retorno += " | " + noAtual.dado;
