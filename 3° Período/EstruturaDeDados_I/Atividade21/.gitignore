@@ -1,0 +1,17 @@
+build/
+dist/
+nbproject/private/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+*.class
+*.jar
+*.log
+hs_err_pid*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
