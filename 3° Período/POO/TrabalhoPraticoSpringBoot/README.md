@@ -45,3 +45,33 @@ O projeto adota uma arquitetura cliente-servidor padrão. O frontend interage ex
 Acesse o seu servidor MySQL e crie o banco de dados da aplicação:
 ```sql
 CREATE DATABASE armazem_db;
+```
+Configure as credenciais de acesso no arquivo `armazem-backend/src/main/resources/application.properties`.
+
+### 2. Executando o Backend
+Abra o seu emulador de terminal e navegue até a pasta do backend:
+```bash
+cd armazem-backend
+```
+Faça o download das dependências e compile o projeto:
+```bash
+mvn clean install
+```
+Inicie o servidor Spring Boot:
+```bash
+mvn spring-boot:run
+```
+O servidor estará rodando em `http://localhost:8080`.
+
+### 3. Executando o Frontend
+Como o frontend é construído com HTML, CSS e JS puros, não há necessidade de um servidor Node.js complexo. Basta abrir o arquivo `index.html` (localizado na pasta `frontend/`) diretamente no seu navegador web, ou utilizar uma extensão como o *Live Server* do seu editor de código.
+
+## 🧪 Testes Automatizados
+
+O projeto possui uma suíte de testes de unidade e de integração, garantindo o correto funcionamento das regras de negócio (como bloqueio de vendas sem estoque e validação de CPFs).
+
+Para rodar a bateria de testes via terminal:
+```bash
+cd armazem-backend
+mvn test
+```
