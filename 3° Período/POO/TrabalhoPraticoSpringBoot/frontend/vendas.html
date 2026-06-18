@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Histórico de Vendas - Armazém</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <style>
+      .vendas-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .status-concluida {
+        color: #2ecc71;
+        font-weight: bold;
+      }
+      .status-cancelada {
+        color: #e74c3c;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="fornecedores.html">Fornecedores</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="movimentacoes.html">Movimentações</a></li>
+        <li><a href="caixa.html">Caixa</a></li>
+        <li><a href="vendas.html">Histórico de Vendas</a></li>
+      </ul>
+    </nav>
+    <main class="vendas-container">
+      <section class="table-section">
+        <h2>Histórico de Vendas</h2>
+        <table id="tabelaVendas">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cliente</th>
+              <th>Data</th>
+              <th>Forma de Pagto</th>
+              <th>Total Final</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="js/vendas.js"></script>
+    <script src="js/authGuard.js"></script>
+  </body>
+</html>

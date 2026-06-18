@@ -1,0 +1,15 @@
+armazem-backend/target/
+armazem-backend/.mvn/wrapper/maven-wrapper.jar
+armazem-backend/nbproject/private/
+armazem-backend/build/
+armazem-backend/nbbuild/
+armazem-backend/dist/
+armazem-backend/nbdist/
+armazem-backend/.nb-gradle/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.log
+.DS_Store
