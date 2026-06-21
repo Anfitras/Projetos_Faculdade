@@ -12,7 +12,7 @@
 - **Orientador**: Prof. Matheus Guedes
 - **Instituição**: IFSULDEMINAS - Campus Machado
 - **Período**: 3º Período de Sistemas de Informação
-- **Data de Entrega**: 2024
+- **Data de Entrega**: 2026
 
 ---
 
@@ -47,97 +47,6 @@ O **Armazém** é um sistema web de gerenciamento de armazém desenvolvido como 
 - **CSS3** - Estilização
 - **JavaScript Vanilla** - Interatividade
 - **Fetch API** - Comunicação com backend
-
----
-
-## 📂 Estrutura do Projeto
-
-```
-TrabalhoPraticoSpringBoot/
-├── armazem-backend/                    # Backend Spring Boot
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/armazem/armazem/backend/
-│   │   │   │   ├── ArmazemApplication.java         # Classe principal
-│   │   │   │   ├── controller/                      # Controllers REST
-│   │   │   │   │   ├── AutenticacaoController.java
-│   │   │   │   │   ├── ClienteController.java
-│   │   │   │   │   ├── ProdutoController.java
-│   │   │   │   │   ├── FornecedorController.java
-│   │   │   │   │   ├── VendaController.java
-│   │   │   │   │   ├── EstoqueMovimentoController.java
-│   │   │   │   │   └── DashboardController.java
-│   │   │   │   ├── service/                         # Lógica de negócio
-│   │   │   │   │   ├── UsuarioService.java
-│   │   │   │   │   ├── ProdutoService.java
-│   │   │   │   │   ├── ClienteService.java
-│   │   │   │   │   ├── FornecedorService.java
-│   │   │   │   │   ├── VendaService.java
-│   │   │   │   │   ├── EstoqueMovimentoService.java
-│   │   │   │   │   └── DashboardService.java
-│   │   │   │   ├── repository/                      # Acesso a dados
-│   │   │   │   │   ├── UsuarioRepository.java
-│   │   │   │   │   ├── ProdutoRepository.java
-│   │   │   │   │   ├── ClienteRepository.java
-│   │   │   │   │   ├── FornecedorRepository.java
-│   │   │   │   │   ├── VendaRepository.java
-│   │   │   │   │   ├── VendaItemRepository.java
-│   │   │   │   │   └── EstoqueMovimentoRepository.java
-│   │   │   │   ├── model/                           # Entidades JPA
-│   │   │   │   │   ├── Usuario.java
-│   │   │   │   │   ├── Produto.java
-│   │   │   │   │   ├── Cliente.java
-│   │   │   │   │   ├── Fornecedor.java
-│   │   │   │   │   ├── Venda.java
-│   │   │   │   │   ├── VendaItem.java
-│   │   │   │   │   ├── EstoqueMovimento.java
-│   │   │   │   │   ├── Perfil.java
-│   │   │   │   │   ├── FormaPagamento.java
-│   │   │   │   │   └── TipoMovimento.java
-│   │   │   │   └── dto/                             # Data Transfer Objects
-│   │   │   │       ├── LoginRequestDTO.java
-│   │   │   │       ├── DashboardDTO.java
-│   │   │   │       └── ProdutoTopVendaDTO.java
-│   │   │   └── resources/
-│   │   │       └── application.properties           # Configurações
-│   │   └── test/                                    # Testes unitários
-│   │       └── java/com/armazem/armazem/backend/service/
-│   │           ├── ClienteServiceTest.java
-│   │           ├── ProdutoServiceTest.java
-│   │           └── VendaServiceTest.java
-│   ├── pom.xml                                      # Dependências Maven
-│   └── target/                                      # Arquivos compilados (ignorado)
-│
-└── frontend/                           # Frontend
-    ├── index.html                      # Dashboard principal
-    ├── login.html                      # Tela de login
-    ├── produtos.html                   # Gerenciamento de produtos
-    ├── clientes.html                   # Gerenciamento de clientes
-    ├── fornecedores.html               # Gerenciamento de fornecedores
-    ├── vendas.html                     # Processamento de vendas
-    ├── caixa.html                      # Caixa/PDV
-    ├── movimentacoes.html              # Movimentação de estoque
-    ├── css/
-    │   ├── global.css                  # Estilos globais
-    │   ├── login.css
-    │   ├── dashboard.css
-    │   ├── produtos.css
-    │   ├── clientes.css
-    │   ├── fornecedores.css
-    │   ├── vendas.css
-    │   ├── caixa.css
-    │   └── movimentacoes.css
-    └── js/
-        ├── login.js                    # Autenticação
-        ├── authGuard.js                # Proteção de rotas
-        ├── dashboard.js
-        ├── produtos.js
-        ├── clientes.js
-        ├── fornecedores.js
-        ├── vendas.js
-        ├── caixa.js
-        └── movimentacoes.js
-```
 
 ---
 
@@ -240,6 +149,9 @@ Para acessar o sistema, use as seguintes credenciais (você pode cadastrar novas
 
 - **Usuário**: `admin`
 - **Senha**: `admin123` (ajuste conforme seu banco de dados)
+
+- **Usuário**: `caixa`
+- **Senha**: `caixa123` (ajuste conforme seu banco de dados)
 
 > **Nota**: As credenciais padrão devem ser alteradas na primeira utilização em ambiente de produção.
 
@@ -464,4 +376,4 @@ Este projeto é desenvolvido como trabalho acadêmico no IFSULDEMINAS - Campus M
 
 ---
 
-**Última atualização**: Junho de 2024
+**Última atualização**: Junho de 2026
