@@ -1,0 +1,92 @@
+# =============================================================
+#  .gitignore — Projeto Armazém (Faculdade)
+#  Backend : Java 21 + Maven + VS Code
+#  Frontend : HTML / CSS / JS + Apache NetBeans
+#  SO      : Linux Mint Xfce
+# =============================================================
+
+
+# ───────────────────────────────────────────────────────────
+# ⚠️  SEGURANÇA — NÃO COMMITAR JAMAIS
+# ───────────────────────────────────────────────────────────
+# application.properties contém URL, usuário e SENHA reais
+# do banco MySQL (Railway). Expor isso no Git é um risco grave.
+# → Crie um application.properties.example sem a senha real
+#   para o professor saber o que configurar.
+
+backend/src/main/resources/application.properties
+
+
+# ───────────────────────────────────────────────────────────
+# MAVEN — artefatos de build
+# ───────────────────────────────────────────────────────────
+backend/target/
+
+# Maven wrapper (JAR baixado localmente, não versionar)
+.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+
+# ───────────────────────────────────────────────────────────
+# JAVA — bytecode e pacotes compilados
+# ───────────────────────────────────────────────────────────
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+
+# ───────────────────────────────────────────────────────────
+# VS CODE — backend
+# ───────────────────────────────────────────────────────────
+.vscode/
+
+# Extensão Java do VS Code gera esta pasta com metadados locais
+.java-version
+
+
+# ───────────────────────────────────────────────────────────
+# APACHE NETBEANS — frontend
+# ───────────────────────────────────────────────────────────
+nbproject/private/
+nbproject/project.properties
+nb-configuration.xml
+nbbuild/
+nbdist/
+build/
+dist/
+
+# Cache interno do NetBeans
+*.orig
+nb*.xml
+
+
+# ───────────────────────────────────────────────────────────
+# LINUX MINT / XFCE — lixo do sistema
+# ───────────────────────────────────────────────────────────
+
+# Arquivos de backup de editores (gedit, mousepad, nano, vim…)
+*~
+*.bak
+*.swp
+*.swo
+
+# Arquivos ocultos criados pelo Thunar (gerenciador de arquivos Xfce)
+.Trash-*
+.directory
+
+# Thumbnails do sistema
+.thumbnails/
+
+# Lixeira local
+.Trash/
+
+
+# ───────────────────────────────────────────────────────────
+# LOGS E TEMPORÁRIOS
+# ───────────────────────────────────────────────────────────
+*.log
+logs/
+tmp/
+temp/
