@@ -15,6 +15,12 @@
     }
   }
 
+  if (usuario.perfil === "GERENTE") {
+    if (paginaAtual !== "index.html" && paginaAtual !== "") {
+      window.location.href = "index.html";
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector("nav ul");
     if (nav) {
@@ -33,6 +39,18 @@
         links.forEach((link) => {
           if (
             link.getAttribute("href") !== "caixa.html" &&
+            link.id !== "btnSair"
+          ) {
+            link.parentElement.style.display = "none";
+          }
+        });
+      }
+
+      if (usuario.perfil === "GERENTE") {
+        const links = nav.querySelectorAll("li a");
+        links.forEach((link) => {
+          if (
+            link.getAttribute("href") !== "index.html" &&
             link.id !== "btnSair"
           ) {
             link.parentElement.style.display = "none";
