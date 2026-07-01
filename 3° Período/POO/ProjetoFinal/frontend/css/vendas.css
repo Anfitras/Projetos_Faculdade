@@ -1,0 +1,13 @@
+.vendas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.status-concluida {
+  color: #2ecc71;
+  font-weight: bold;
+}
+.status-cancelada {
+  color: #e74c3c;
+  font-weight: bold;
+}
